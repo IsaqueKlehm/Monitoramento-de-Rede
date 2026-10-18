@@ -1,29 +1,45 @@
-# Monitor de Rede
+# Monitor de Rede com Python
 
-Projeto desenvolvido em **Python** que integra programação, infraestrutura de TI e redes de computadores para automatizar testes de conectividade entre dispositivos.
+Projeto desenvolvido para explorar a integração entre **programação, infraestrutura de TI e redes de computadores**, utilizando Python para automatizar testes de conectividade.
 
 ## Sobre o projeto
 
-A aplicação utiliza o comando `ping`, executado por meio da biblioteca `subprocess`, para verificar a acessibilidade de dispositivos através de seus endereços IP. Os resultados retornados pelo sistema operacional são utilizados para identificar possíveis falhas de conectividade.
+A aplicação utiliza o comando `ping`, por meio da biblioteca `subprocess`, para verificar a conectividade com endereços IP e domínios. Possui um menu interativo que permite realizar testes individuais, verificar múltiplos dispositivos e consultar o histórico de resultados durante a execução do programa.
 
-O projeto busca explorar como a programação pode ser aplicada na infraestrutura de TI, auxiliando em tarefas de diagnóstico de rede, monitoramento de dispositivos e suporte técnico.
+## Funcionalidades
+
+- **Verificar um dispositivo:** testa a conectividade com um IP ou domínio.
+- **Verificar vários dispositivos:** permite testar múltiplos endereços em sequência.
+- **Consultar histórico:** consulta os resultados armazenados durante a execução.
+- **Menu interativo:** facilita a navegação entre as funcionalidades.
 
 ## Tecnologias utilizadas
 
-- **Python** — desenvolvimento da aplicação.
-- **Subprocess** — execução de comandos do sistema operacional.
-- **Ping** — teste de conectividade entre dispositivos.
+- Python
+- Subprocess
+- Ping
+- Match/Case
 
 ## Objetivos
 
 - Aplicar Python na automação de tarefas de infraestrutura.
-- Praticar conceitos de redes de computadores e endereçamento IP.
-- Compreender a execução e interpretação de comandos do sistema operacional.
-- Desenvolver conhecimentos aplicáveis ao suporte técnico e ao diagnóstico de problemas de rede.
+- Praticar conceitos de redes de computadores.
+- Desenvolver habilidades de diagnóstico de conectividade.
+- Explorar a programação aplicada ao suporte técnico.
 
-## Próximas melhorias
+## Como executar
 
-- Verificação de múltiplos dispositivos.
-- Registro e consulta do histórico de testes.
-- Identificação automática do status de conectividade.
-- Tratamento de falhas e exibição de resultados de forma organizada.
+1. Instale o Python.
+2. Salve o código em um arquivo chamado `monitor_rede.py`.
+3. Execute pelo terminal:
+
+   ```bash
+   python monitor_rede.py
+   ```
+
+## Melhorias futuras
+
+- Aprimorar a identificação do status de conectividade.
+- Registrar data e hora de cada teste.
+- Melhorar a exibição do histórico.
+- Salvar os resultados em arquivo para consultas posteriores.
