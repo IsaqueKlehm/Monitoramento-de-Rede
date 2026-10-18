@@ -11,8 +11,8 @@ def menu():
 
         try:  
             escolha = int(input("Digite sua escolha: "))
-            if escolha > 4 or escolha < 0: 
-                while escolha > 4 or escolha < 0:
+            if escolha > 4 or escolha <= 0: 
+                while escolha > 4 or escolha <= 0:
                     escolha = int(input("Digite uma escolha válida: "))
                 return escolha
             else:
