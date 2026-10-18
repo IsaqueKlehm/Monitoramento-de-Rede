@@ -1,1 +1,29 @@
-Projeto em Python que combina programação, infraestrutura de TI e conceitos de redes de computadores para automatizar testes de conectividade entre dispositivos. Utilizando o comando `ping` e a biblioteca `subprocess`, a aplicação permite verificar se um dispositivo está acessível por meio de seu endereço IP, interpretando os resultados retornados pelo sistema operacional. O objetivo é explorar a integração entre desenvolvimento de software e infraestrutura, aplicando Python na automação de tarefas comuns de suporte técnico, diagnóstico de rede e monitoramento de dispositivos.
+# Monitor de Rede
+
+Projeto desenvolvido em **Python** que integra programação, infraestrutura de TI e redes de computadores para automatizar testes de conectividade entre dispositivos.
+
+## Sobre o projeto
+
+A aplicação utiliza o comando `ping`, executado por meio da biblioteca `subprocess`, para verificar a acessibilidade de dispositivos através de seus endereços IP. Os resultados retornados pelo sistema operacional são utilizados para identificar possíveis falhas de conectividade.
+
+O projeto busca explorar como a programação pode ser aplicada na infraestrutura de TI, auxiliando em tarefas de diagnóstico de rede, monitoramento de dispositivos e suporte técnico.
+
+## Tecnologias utilizadas
+
+- **Python** — desenvolvimento da aplicação.
+- **Subprocess** — execução de comandos do sistema operacional.
+- **Ping** — teste de conectividade entre dispositivos.
+
+## Objetivos
+
+- Aplicar Python na automação de tarefas de infraestrutura.
+- Praticar conceitos de redes de computadores e endereçamento IP.
+- Compreender a execução e interpretação de comandos do sistema operacional.
+- Desenvolver conhecimentos aplicáveis ao suporte técnico e ao diagnóstico de problemas de rede.
+
+## Próximas melhorias
+
+- Verificação de múltiplos dispositivos.
+- Registro e consulta do histórico de testes.
+- Identificação automática do status de conectividade.
+- Tratamento de falhas e exibição de resultados de forma organizada.

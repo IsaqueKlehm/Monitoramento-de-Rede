@@ -1,3 +1,5 @@
+import subprocess
+
 def menu():
     print("""
         --------Monitor de Rede--------
@@ -19,6 +21,31 @@ def menu():
              return escolha
         except ValueError:
             print("Erro de Escolha")
-     
-numero = menu()
-print(numero)
+escolha = menu()
+
+def opcao1():
+
+    ip = input("Digite seu IP\nExemplo (8.8.8.8 ou google.com): ")
+
+    resultado = subprocess.run(
+    ["ping", "-n", "1", ip],
+    capture_output=True,
+    text=True
+)
+
+    print(resultado.stdout)
+match escolha:
+    # 1 - Verificar um dispositivo
+    # 2 - Verificar vários dispositivos
+    # 3 - Consultar histórico
+    case 1:
+        opcao1()
+    case 2:
+        pass
+    case 3:
+        pass
+    case 4:
+        print("Saindo")
+        while True:
+            break
+    
